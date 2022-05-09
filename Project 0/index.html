@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            .top_right {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            a {
+                margin-left: 2px;
+                margin-right: 10px;
+                text-decoration: none;
+                font-size: 17px;
+                border: 1px solid gray;
+                padding: 4px;
+                border-radius: 10px;
+                background-color: rgb(223, 223, 223);
+                color: blueviolet;
+            }
+            .search_bar {
+                display: block;
+                margin: auto;
+                border-radius: 20px;
+                height: 40px;
+                width: 500px;
+                border: 1px solid grey;
+                background-image: url(search.png);
+                background-repeat: no-repeat;
+                background-size: 30px 30px;
+                background-position: left 10px bottom 5px;
+                padding-left: 50px;
+                font-size: 20px;
+            }
+            .search {
+                margin: 20px auto;
+                height: 30px;
+                width: 140px;
+                border-radius: 10px;
+            }
+            .title {
+                font-size: 40px;
+                font-weight: 800;
+                margin-top: 250px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            table {
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top_right">
+            <p><a href="image_search.html">Image Search</a><a href="advance_search.html">Advance Search</a></p>
+        </div>
+        <p class="title"><span style="color: red;">Li</span><span style="color: green;">Search</span></p>
+        <form action="https://www.google.com/search">
+            <input class="search_bar" type="text" name="q">
+            <table>
+                <tr>
+                    <td><input class="search" type="submit" value="Google Search"></td>
+                    <td><input class="search" type="submit" value="I'm Feeling Lucky"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Search</title>
+    <style>
+        body {
+                font-family: sans-serif;
+        }
+        .title {
+            font-size: 50px;
+            font-weight: 800;
+            margin: 0px 10px;
+        }
+        .upright {
+            position: absolute;
+            right: 0px;
+            top: 10px;
+        }
+        .ho {
+            margin-left: 2px;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 17px;
+            border: 1px solid gray;
+            padding: 4px;
+            border-radius: 10px;
+            background-color: rgb(223, 223, 223);
+            color: blueviolet;
+        }
+        input {
+            width: 300px;
+            height: 20px;
+        }
+        .sub {
+            height: 30px;
+            width: 200px;
+            font-size: 22px;
+            background-color: blue;
+            color: white;
+        }
+        table {
+            border-spacing: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="title" style="color: red;">Li</p>
+    <div class="upright">
+        <p><a class="ho" href="index.html">Home</a></p>
+    </div>
+    <p style="font-size: 25px; color: rgb(3, 65, 116);">Advence Search</p>
+    <hr>
+    <div style="margin-top: 40px; margin-bottom: 30px;">Find page with...</div>
+    <form action="https://www.google.com/search">
+        <table>
+            <tr>
+                <td><label for="1">all these words:</label></td>
+                <td><input id="1" type="text" name="as_q"></td>
+            </tr>
+            <tr>
+                <td><label for="2">this exact word or phrase:</label></td>
+                <td><input id="2" type="text" name="as_epq"></td>
+            </tr>
+            <tr>
+                <td><label for="3">any of these words:</label></td>
+                <td><input id="3" type="text" name="as_oq"></td>
+            </tr>
+            <tr>
+                <td><label for="4">none of these words:</label></td>
+                <td><input id="4" type="text" name="as_eq"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="sub" type="submit" value="Advance Search" name="q"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
